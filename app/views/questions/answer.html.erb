@@ -1,0 +1,20 @@
+<div class="container mt-5">
+  <h1 class="mb-4">Stupid Coaching</h1>
+
+  <!-- User question -->
+  <blockquote class="blockquote ps-3 border-start border-3 border-secondary">
+    <p class="mb-0"><%= @question %></p>
+    <footer class="blockquote-footer mt-1">You</footer>
+  </blockquote>
+
+  <!-- Coach answer -->
+  <div class="mt-4 p-3" style="background-color: #fff9c4;">
+    <strong><%= @answer %></strong>
+    <footer class="blockquote-footer mt-1">Your coach</footer>
+  </div>
+
+  <!-- Backlink -->
+  <p class="mt-4">
+    <%= link_to "Ask a new question", ask_path %>
+  </p>
+</div>

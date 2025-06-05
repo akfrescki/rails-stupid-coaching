@@ -1,0 +1,10 @@
+<div class="container mt-5">
+  <h1 class="mb-4">Stupid Coaching</h1>
+
+  <%= form_tag "/answer", method: :get, data: { turbo: false }, class: "mb-3" do %>
+    <div class="mb-3">
+      <%= text_field_tag :question, nil, placeholder: "Type your question", class: "form-control" %>
+    </div>
+    <%= submit_tag "Ask!", class: "btn btn-primary" %>
+  <% end %>
+</div>
